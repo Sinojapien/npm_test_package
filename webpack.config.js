@@ -9,6 +9,9 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].bundle.js',
     clean: true,
+    library: 'npm-test-package',
+    globalObject: 'this',
+    libraryTarget: 'umd',
   },
   // resolve: {
   //   alias: {
