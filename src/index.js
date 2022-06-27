@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from "react";
 import BigButton from './components/BigButton';
 
 // class ImageGallery extends React.Component {
@@ -18,6 +19,9 @@ import BigButton from './components/BigButton';
 // };
 
 const ImageGallery = () =>{
+
+  useEffect(() => {console.log(123)}, []);
+
   return (
     <div>
       <h1>Goof!</h1>
