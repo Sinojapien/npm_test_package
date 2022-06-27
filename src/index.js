@@ -7,7 +7,12 @@ class ImageGallery extends React.Component {
   }
   render() {
     return (
-      <div><h1>Hello!</h1><BigButton></BigButton><BigButton></BigButton><BigButton></BigButton></div>
+      <div>
+        <h1>Bye!</h1>
+        <div><BigButton/></div>
+        <div><BigButton/></div>
+        <div><BigButton/></div>
+      </div>
     );
   }
 };
