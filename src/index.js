@@ -25,10 +25,10 @@ import BigButton from './components/BigButton';
 const TestComponent = () => {
   useEffect(() => {console.log(123)}, []);
   return (
-    <div class="test-component">
-      <div><h1>Hello!</h1></div>
-      <div><h1>Hello!</h1></div>
-      <div><h1>Hello!</h1></div>
+    <div className="test-component">
+      <div><h1>Bye!</h1></div>
+      <div><h1>Bye!</h1></div>
+      <div><h1>Bye!</h1></div>
     </div>
   )
 };
