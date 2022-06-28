@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ImageGallery from '../src';
+import TestComponent from '../src';
 
 class App extends React.Component {
     constructor() {
@@ -10,9 +10,9 @@ class App extends React.Component {
   
     render() {
       return (
-        <section className='app'>
-            <ImageGallery/>
-        </section>
+        <div className='app'>
+            <TestComponent/>
+        </div>
       );
     }
 }

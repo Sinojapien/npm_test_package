@@ -14,12 +14,12 @@ module.exports = {
     globalObject: 'this',
     libraryTarget: 'umd',
   },
-  // resolve: {
-  //   alias: {
-  //     src: path.resolve(__dirname, 'src/'),
-  //   },
-  //   extensions: ['.js']
-  // },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src/'),
+    },
+    extensions: ['.js']
+  },
   module: {
     rules: [
       {

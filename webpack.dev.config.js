@@ -11,12 +11,12 @@ module.exports = {
     filename: '[name].bundle.js',
     clean: true,
   },
-  // resolve: {
-  //   alias: {
-  //     src: path.resolve(__dirname, 'src/'),
-  //   },
-  //   extensions: ['.js']
-  // },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src/'),
+    },
+    extensions: ['.js']
+  },
   module: {
     rules: [
       {
