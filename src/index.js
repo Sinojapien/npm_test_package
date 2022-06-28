@@ -23,12 +23,13 @@ import BigButton from './components/BigButton';
 
 // https://stackoverflow.com/questions/45817227/how-to-export-function-with-webpack
 const TestComponent = () => {
-  useEffect(() => {console.log(7)}, []);
+  useEffect(() => {console.log(8)}, []);
   return (
     <div className="test-component">
       <div><h1>Hello!</h1></div>
       <div><h1>Bye!</h1></div>
       <div><h1>Hi!</h1></div>
+      <div><h1>Hello!</h1></div>
       <div><h1>Hello!</h1></div>
       <div><h1>Hello!</h1></div>
       <div><h1>Hello!</h1></div>
