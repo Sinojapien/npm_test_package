@@ -2,25 +2,10 @@ import React from 'react';
 import { useEffect } from "react";
 import BigButton from './components/BigButton';
 
+//! read, https://github.com/vercel/next.js/discussions/34380
+
 //Cannot export function directly (empty index.bundle.js file)
-// class TestComponent extends React.Component {
-//   constructor(props) {
-//     super(props);
-//   }
-
-//   render() {
-//     // useEffect(() => {console.log(123)}, []);
-
-//     return (
-//       <div>
-//         <h1>Bye!</h1>
-//         <h1>Bye!</h1>
-//         <h1>Bye!</h1>
-//       </div>
-//     );
-//   }
-// };
-
+// solve with output: { library: "library-name", libraryTarget: "umd", ... }
 // https://stackoverflow.com/questions/45817227/how-to-export-function-with-webpack
 const TestComponent = () => {
   useEffect(() => {console.log(8)}, []);
@@ -29,10 +14,6 @@ const TestComponent = () => {
       <div><h1>Hello!</h1></div>
       <div><h1>Bye!</h1></div>
       <div><h1>Hi!</h1></div>
-      <div><h1>Hello!</h1></div>
-      <div><h1>Hello!</h1></div>
-      <div><h1>Hello!</h1></div>
-      <div><h1>Hello!</h1></div>
     </div>
   )
 };
