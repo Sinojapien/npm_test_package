@@ -36,10 +36,10 @@ module.exports = {
           'sass-loader',
         ],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'public',
-      },
+      // {
+      //   test: /\.(png|svg|jpg|jpeg|gif)$/,
+      //   type: 'public',
+      // },
     ]
   },
   plugins: [
