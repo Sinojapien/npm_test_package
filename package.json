@@ -1,6 +1,6 @@
 {
   "name": "@sinojapien/npm-test-package",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Testing npm package export.",
   "main": "./build/index.bundle.js",
   "scripts": {
