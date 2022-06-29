@@ -3,7 +3,10 @@ import BigButton from "src/components/BigButton";
 
 import ReactImageGallery from "react-image-gallery";
 //* import css when module is exported
-// import "package-name/build/index.css";
+//* multiple css, https://medium.com/trabe/multiple-css-bundles-with-webpack-75f263095f09
+//* https://www.sitepoint.com/community/t/how-to-configure-webpack-to-output-multiple-css-files-from-sass/303659/2
+//* https://stackoverflow.com/questions/57167818/webpack-bundle-multiple-different-versions-of-css-files
+// import "package-name/build/styles.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
@@ -31,7 +34,6 @@ const TestComponent = () => {
   useEffect(() => console.log(123), []);
   return (
     <div className="test-component">
-      <div><h1>Hello!</h1></div>
       <div><h1>Hello!</h1></div>
       <BigButton/>
       <ReactImageGallery items={images}/>

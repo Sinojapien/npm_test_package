@@ -12,6 +12,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'dev/output'),
     filename: '[name].bundle.js',
   },
+  devtool: 'source-map',
   devServer: {
     host: '0.0.0.0',
     port: 8082,
