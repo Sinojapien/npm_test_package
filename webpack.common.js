@@ -3,16 +3,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: "production",
-  entry: { index: path.resolve(__dirname, 'src/index.js'), },
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: '[name].bundle.js',
     clean: true,
-    library: 'npm-test-package',
-    libraryExport: 'default',
-    globalObject: 'this',
-    libraryTarget: 'umd',
   },
   resolve: {
     alias: {
@@ -46,19 +38,4 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
   ],
-  externals: {
-    // Don't bundle react or react-dom
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
-      root: 'React',
-    },
-    'react-dom': {
-      commonjs: 'react-dom',
-      commonjs2: 'react-dom',
-      amd: 'react-dom',
-      root: 'ReactDOM',
-    },
-  },
 };
