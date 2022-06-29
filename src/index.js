@@ -1,6 +1,6 @@
-import React from 'react';
-import { useEffect } from "react";
-import BigButton from './components/BigButton';
+import React, { useEffect } from 'react';
+// import BigButton from './components/BigButton';
+import BigButton from 'src/components/BigButton';
 
 //! read, https://github.com/vercel/next.js/discussions/34380
 
@@ -14,6 +14,7 @@ const TestComponent = () => {
       <div><h1>Hello!</h1></div>
       <div><h1>Bye!</h1></div>
       <div><h1>Hi!</h1></div>
+      <BigButton/>
     </div>
   )
 };
