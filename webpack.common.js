@@ -22,11 +22,11 @@ module.exports = {
       {
         test: /\.(css|scss)$/i,
         use: [
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
+            MiniCssExtractPlugin.loader,
+            // Translates CSS into CommonJS
+            'css-loader',
+            // Compiles Sass to CSS
+            'sass-loader',
         ],
       },
       // {

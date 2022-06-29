@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import TestComponent from 'src';
+import TestComponent from "src";
 
 class App extends React.Component {
     constructor() {
@@ -10,11 +10,11 @@ class App extends React.Component {
   
     render() {
       return (
-        <div className='app'>
+        <div className="app">
             <TestComponent/>
         </div>
       );
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById("root"));

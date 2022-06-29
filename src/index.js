@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
-import BigButton from 'src/components/BigButton';
+import React, { useEffect } from "react";
+import BigButton from "src/components/BigButton";
 
-import ReactImageGallery from 'react-image-gallery';
+import ReactImageGallery from "react-image-gallery";
+//* import css when module is exported
+// import "package-name/build/index.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
@@ -9,16 +11,16 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
   {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
   },
   {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
   },
 ];
 
@@ -29,6 +31,7 @@ const TestComponent = () => {
   useEffect(() => console.log(123), []);
   return (
     <div className="test-component">
+      <div><h1>Hello!</h1></div>
       <div><h1>Hello!</h1></div>
       <BigButton/>
       <ReactImageGallery items={images}/>

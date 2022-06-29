@@ -11,7 +11,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].bundle.js',
     library: 'npm-test-package',
-    libraryExport: 'default',
+    // libraryExport: 'default',
     globalObject: 'this',
     libraryTarget: 'umd',
   },
@@ -31,11 +31,11 @@ module.exports = merge(common, {
       amd: 'react-dom',
       root: 'ReactDOM',
     },
-    // 'react-image-gallery': {
-    //   commonjs: 'react-image-gallery',
-    //   commonjs2: 'react-image-gallery',
-    //   amd: 'react-image-gallery',
-    //   root: 'ReactImageGallery',
-    // },
+    'react-image-gallery': {
+      commonjs: 'react-image-gallery',
+      commonjs2: 'react-image-gallery',
+      amd: 'react-image-gallery',
+      root: 'ReactImageGallery',
+    },
   },
 });
