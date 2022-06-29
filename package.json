@@ -9,7 +9,7 @@
     "dev": "webpack serve --config webpack.dev.js",
     "lint": "eslint .",
     "tree": "tree --gitignore",
-    "publish": "npm version && npm version && npm version"
+    "publish": "npm version && npm version $VERSION && npm version"
   },
   "keywords": [
     "react"
