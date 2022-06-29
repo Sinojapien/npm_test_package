@@ -8,8 +8,7 @@
     "build-dev": "webpack --config webpack.dev.js",
     "dev": "webpack serve --config webpack.dev.js",
     "lint": "eslint .",
-    "tree": "tree --gitignore",
-    "publish": "npm version --no-git-tag-version $VERSION && git commit -m $MESSAGE && git push origin main"
+    "tree": "tree --gitignore"
   },
   "keywords": [
     "react"
