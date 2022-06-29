@@ -9,8 +9,7 @@
     "dev": "webpack serve --config webpack.dev.js",
     "lint": "eslint .",
     "tree": "tree --gitignore",
-    "publish": "npm version --no-git-tag-version $VERSION && git commit -m init && git push origin main",
-    "test": "cat $npm_config_a && cat $npm_config_b"
+    "publish": "npm version --no-git-tag-version $VERSION && git commit -m $MESSAGE && git push origin main"
   },
   "keywords": [
     "react"
