@@ -17,6 +17,8 @@ module.exports = merge(common, {
   },
   externals: {
     // Don't bundle react or react-dom
+    // https://webpack.js.org/configuration/externals/
+    // follwing only applicable for libraryTarget: 'umd'
     react: {
       commonjs: 'react',
       commonjs2: 'react',
@@ -28,6 +30,12 @@ module.exports = merge(common, {
       commonjs2: 'react-dom',
       amd: 'react-dom',
       root: 'ReactDOM',
+    },
+    'react-image-gallery': {
+      commonjs: 'react-image-gallery',
+      commonjs2: 'react-image-gallery',
+      amd: 'react-image-gallery',
+      root: 'ReactImageGallery',
     },
   },
 });

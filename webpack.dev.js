@@ -14,7 +14,7 @@ module.exports = merge(common, {
   },
   devServer: {
     host: '0.0.0.0',
-    port: 9000,
+    port: 8082,
     // watchContentBase: true,
     // open: true,
     hot: true,

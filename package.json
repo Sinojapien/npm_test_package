@@ -1,5 +1,5 @@
 {
-  "name": "@sinojapien/npm_test_package",
+  "name": "@sinojapien/npm-test-package",
   "version": "1.0.0",
   "description": "Testing npm package export.",
   "main": "./build/index.bundle.js",
@@ -14,8 +14,9 @@
   "author": "Sinojapien",
   "license": "ISC",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.2",
+    "react-image-gallery": "^1.2.8"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
