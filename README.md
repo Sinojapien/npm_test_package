@@ -3,4 +3,4 @@ React Image Gallery
 
 # License
 
-MIT
+ISC
